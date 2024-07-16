@@ -1,0 +1,582 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    background: url('../images/kfc_sprite.png')no-repeat top right/250px 56px;
+    padding-top: 20px;
+}
+.container.on {
+    background: url('../images/kfc_sprite.png')no-repeat top right/250px 140px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #2c251e;
+}
+h2{
+    color: #2c251e;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.kfc-up{
+    display: flex;
+}
+.kfc-up .logo{
+    margin-top: 20px;
+    margin-left: 40px;
+    line-height: 18px;
+}
+.acc{
+    width: 1440px;
+    margin-right: 320px;
+    position: relative;
+}
+.acc .header-access{
+    float: right;
+}
+.kfc-up .header-access ul{
+    display: flex;
+    position: absolute;
+    top: 7px; right: 10px;
+}
+.kfc-up .header-access ul::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    height: 10px;
+    border-left: 1px solid #ddd;
+}
+.kfc-up .header-access ul li{
+    padding: 7px 12.5px 0;
+}
+.kfc-up .header-access ul li a{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #666666;
+    position: relative;
+    line-height: 20px;
+}
+.kfc-up .header-access ul li .chicken{
+    position: absolute;
+    top: 0;right: -13px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url('../images/icon_shop_3.png')no-repeat;
+}
+.kfc-up .header-access ul.on{
+    position: absolute;
+    top: 3px; right: 10px;
+}
+.kfc-up .header-access ul li a span{
+    width: 32px;height: 12px;
+    color: #2c251e;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 11px;left: 13px;
+}
+/* KFC 아래 메뉴 */
+
+.kfc-down-menu{
+    height: 180px;
+}
+.acc-t{
+    width: 1440px;
+    position: relative;
+}
+.header .container .kfc-down-menu{
+    position: relative;
+}
+.acc-t .category-list{
+    position: absolute;
+    top: 7px;right: 300px;
+    display: flex;
+}
+.acc-t .category-list.on{
+    position: absolute;
+    top: 0px;right: 300px;
+}
+.acc-t .category-list li{
+    text-align: center;
+    position: relative;
+    padding: 0 12px;
+}
+.category-list li span{
+    cursor: pointer;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    color: #2c251e;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.category-list li ul{
+    margin: 0 auto;
+    padding: 55px 0 45px;
+}
+
+.category-list li ul li a{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+/* main */
+main {
+    padding-top: 140px;
+}
+/* 슬라이드 */
+.slided{
+    width: 100%;
+    height: 440px;
+}
+.button{
+    color: #fff;
+}
+main .main-slide .button-right{
+    background: url('../images/arrows/chevron_right_white_24dp.svg')no-repeat;
+    width: 60px; height: 60px;
+    background-size: 60px 60px;
+    top: 192px;right: 300px;
+    z-index: 88888888888;
+    cursor: pointer;
+    position: absolute;
+}
+main .main-slide .button-left{
+    background: url('../images/arrows/chevron_left_white_24dp.svg')no-repeat;
+    width: 60px;height: 60px;
+    background-size: 60px 60px;
+    top: 192px;left: 300px;
+    z-index: 88888888888;
+    cursor: pointer;
+    position: absolute;
+}
+
+.search .search-in ul{
+    display: flex;
+    padding: 20px 50px;
+}
+
+.search .search-in ul li{
+    padding: 0 10px;
+    width: calc(100%/3);
+}
+.search .search-in img{
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: top;
+}
+.best-menu{
+    padding: 0 60px;
+}
+.best-menu .menu-space{
+    padding-bottom: 100px;
+}
+.best-menu .title h2{
+    margin: 20px 0 40px;
+}
+.best-menu .food-slide{
+    padding: 0 0 50px;
+}
+.best-menu .food-slide .menu-box{
+    display: block;
+    padding: 32px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.best-menu .food-slide .menu-box img{
+    max-width: 100%;
+    vertical-align: top;
+    margin-bottom: 32px;
+}
+.food-slide{
+    width: 1800px;
+}
+.food-slide .swiper-wrapper .swiper-slide .menu-box .me{
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+.food-slide .swiper-wrapper .swiper-slide .menu-box .sub{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #666666;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.food-slide .swiper-wrapper .swiper-slide .menu-box .price{
+    display: inline-block;
+    background: url('../images/ico_price_red_sm.png') no-repeat 0% 50%;
+    color: #c90a1f;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 23px;
+}
+.best-menu .menu-space .title .food-slide-next{
+    border: 2px solid #ea0a2a;
+    background: url('../images/arrows/chevron_right_black_24dp\ \(1\).svg')no-repeat 50%;
+    background-size: 32px 32px;
+    width: 52px;
+    height: 52px;
+    float: right;
+    position: relative;
+    top: -20px;right:13px;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+.best-menu .menu-space .title .food-slide-next:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.best-menu .menu-space .title .food-slide-prev{
+    border: 2px solid #ea0a2a;
+    background: url('../images/arrows/chevron_left_black_24dp.svg')no-repeat 50%;
+    background-size: 32px 32px;
+    width: 52px;
+    height: 52px;
+    float: right;
+    position: relative;
+    display: block;
+    top: -20px;right:13px;
+    border-radius: 8px;
+    margin-right: 8px;
+    opacity: 0.6;
+}
+.best-menu .menu-space .title .food-slide-prev:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+main .various{
+    display: block;
+    background: #211817;
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+}
+main .app-order{
+    background-color: #e21e2d;
+}
+main .app-order .app-container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+main .app-order .app-container .app-banner{
+    padding: 60px;
+    position: relative;
+}
+main .app-order .app-container .app-banner .app-banner-inner{
+    margin-bottom: 45px;
+}
+main .app-order .app-container .app-banner a{
+    display: block;
+    text-align: center;
+    width: 200px;
+    background-color: #000;
+    margin: 0 0 10px;
+    font-family: 'GmarketSansMedium';
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+main .app-order .app-container .app-banner .app-banner-img{
+    position: absolute;
+    bottom: 0;right: 0;
+}
+main .app-order .app-container .app-banner .app-banner-img img{
+    vertical-align: top;
+}
+.phandom{
+    background: url('../images/phandom/bg_fandom.jpg')no-repeat 50% 0%;
+}
+.phandom .insta-container{
+    max-width: 1920px;
+    padding: 0 60px;
+}
+.phandom .insta-container .title img{
+    vertical-align: top;
+    max-width: 100%;
+}
+.phandom .insta-container .title h2{
+    font-size: 32px;
+    line-height: 38px;
+    margin: 20px 0 40px;
+    color: #2c251e;
+}
+.phandom .insta-container .insta-box{
+    padding: 0 0 50px;
+}
+.phandom .insta-container .insta-box ul{
+    display: flex;
+}
+.phandom .insta-container .insta-box ul li{
+    padding: 0 10px;
+    width: 20%;
+    display: inline-block;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow:first-child{
+    margin-left: 0;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow:last-child{
+    margin-right: 0;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow .insta-img{
+    width: 100%;
+    display: block;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow .insta-hover{
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    margin: 26% 16%;
+    padding: 10% 9% 0;
+    text-align: center;
+    background-color: #2c251e;
+    opacity: 0.9;
+    word-break: break-word;
+    border: 1px solid #7c6a55;
+    display: none;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow .insta-hover .korea{
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    margin: 0 0 5px;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow .insta-hover .korea-menu{
+    color: #cbc4bc;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    height: 55px;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow .insta-hover .plus{
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 25px;
+    line-height: 37.5px;
+}
+.phandom .insta-container .insta-box ul li .insta-shadow a:hover .insta-hover{
+    display: block;
+}
+.phandom .insta-container .insta-box ul li .insta-bottom-text{
+    background-color: #f8f8f8;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+.phandom .insta-container .insta-box ul li .insta-bottom-text .kfckorea{
+    float: left;
+    width: 110px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    color: #888;
+}
+.phandom .insta-container .insta-box ul li .insta-bottom-text a .follower{
+    float: right;
+    color: #ea0a2a;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.phandom .insta-container .insta-box ul li .insta-bottom-text img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.kfc-youtube .youtube-container{
+    max-width: 1920px;
+    padding: 0 60px;
+}
+.kfc-youtube .youtube-container .item{
+    padding: 0 0 120px;
+    margin: 50px 0 0;
+}
+.kfc-youtube .youtube-container .title img{
+    max-width: 100%;
+    display: block;
+}
+.kfc-youtube .youtube-container .title h2{
+    font-weight: 700;
+    line-height: 38px;
+    margin: 20px 0 40px;
+}
+.youtube-slide {
+    width: 1800px;
+}
+.youtube-slide .swiper-slide {
+    opacity: 0.5;
+}
+.youtube-slide .swiper-slide-active {
+    opacity: 1;
+}
+.kfc-youtube .youtube-container .youtube-slide .swiper-wrapper .swiper-slide iframe{
+    width: 100%;
+    border-radius: 16px;
+}
+.kfc-youtube .youtube-container .title .youtube-slide-next{
+    border: 2px solid #ea0a2a;
+    background: url('../images/arrows/chevron_right_black_24dp\ \(1\).svg')no-repeat 50%;
+    background-size: 32px 32px;
+    width: 52px;
+    height: 52px;
+    float: right;
+    position: relative;
+    top: -45px;right:10px;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+.kfc-youtube .youtube-container .title .youtube-slide-next:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.kfc-youtube .youtube-container .title .youtube-slide-prev:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.kfc-youtube .youtube-container .title .youtube-slide-prev{
+    border: 2px solid #ea0a2a;
+    background: url('../images/arrows/chevron_left_black_24dp.svg')no-repeat 50%;
+    background-size: 32px 32px;
+    width: 52px;
+    height: 52px;
+    float: right;
+    position: relative;
+    top: -45px;right:10px;
+    border-radius: 8px;
+    margin-right: 8px;
+    opacity: 0.6;
+
+}
+footer{
+    max-width: 100%;
+}
+footer .kfc-footer{
+    padding: 60px 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    width: 1260px;
+    margin: 0 auto;
+}
+footer .kfc-footer .logo-footer{
+    margin: 0 0 40px;
+}
+footer .kfc-footer .logo-footer .f-logo{
+    display: block;
+    width: 110px;
+    height: 30px;
+    background: url('../images/logo.png')no-repeat;
+    margin-left: 10px;
+}
+footer .kfc-footer .footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+footer .kfc-footer .footer-nav .footer-nav-up .footer-nav-upa :hover{
+    text-decoration: underline;
+}
+footer .kfc-footer .footer-nav .footer-nav-up .footer-nav-upt :hover{
+    text-decoration: underline;
+}
+footer .kfc-footer .footer-nav .footer-nav-up .footer-nav-upa{
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+footer .kfc-footer .footer-nav .footer-nav-up .footer-nav-upt{
+    font-size: 12px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #888888;
+}
+footer .kfc-footer .footer-nav .padd{
+    padding: 0 10px;
+}
+footer .none-gray{
+    width: 100%;height: 46px;
+    background-color: #282828;
+}
+footer .down-nav-two{
+    padding: 25px 0 70px;
+    background-color: #202020;
+}
+footer .down-nav-two .down-footer .down-footer-one{
+    text-align: center;
+}
+footer .down-nav-two .down-footer .down-footer-one li{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer .down-nav-two .down-footer .down-footer-one li a{
+    color: #888888;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+footer .down-nav-two .down-footer .down-footer-one li .yellow{
+    color: #deac55;
+}
+footer .footer-last{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+}
+footer .footer-last .address{
+    margin-top: 30px;
+}
+footer .footer-last .co{
+    margin-top: 27px;
+}

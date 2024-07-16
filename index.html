@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="kfc-up">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="acc">
+                    <div class="header-access">
+                        <ul>
+                            <li><a class="ddd" href="#">로그인</a></li>
+                            <li><a class="ddd" href="#">주문내역조회</a></li>
+                            <li><a class="ddd" href="#">고객센터</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a class="chicken" href="#"><span>0</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="kfc-down-menu">
+                <div class="acc-t">
+                    <ul class="category-list">
+                        <li>
+                            <span>DELIVERY</span>
+                            <ul>
+                                <li><a href="#">추천메뉴</a></li>
+                                <li><a href="#">치킨&세트</a></li>
+                                <li><a href="#">버거&세트</a></li>
+                                <li><a href="#">스낵&사이드</a></li>
+                                <li><a href="#">음료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>STORE</span>
+                            <ul>
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>EVENT</span>
+                            <ul>
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">새소식</a></li>
+                                <li><a href="#">공지(공고)사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>KFC SERVICE</span>
+                            <ul>
+                                <li><a href="#">멤버쉽</a></li>
+                                <li><a href="#">카드 & 상품권</a></li>
+                                <li><a href="#">KFC TIP</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">전체 메뉴 보기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>가맹 및 입점 문의</span>
+                            <ul>
+                                <li><a href="#">가맹 상담 문의</a></li>
+                                <li><a href="#">임대 상담 문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="swiper mySwiper main-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/메인페이지.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/메인페이지1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/메인페이지2.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/메인페이지3.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/메인페이지4.png" alt=""></div>
+            </div>
+            <div class="button-right"></div>
+            <div class="button-left"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="search">
+            <div class="search-in">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/events/banner_storesearch.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/events/banner_Delivery_v2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/events/banner_promotion_v2.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="best-menu">
+            <div class="menu-space">
+                <div class="title">
+                    <img src="images/kfc_sprite.png" alt="">
+                    <h2>BEST MENU</h2>
+                    <div class="food-slide-next"></div>
+                    <div class="food-slide-prev"></div>
+                </div>
+                <div class="swiper food-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food14.png" alt="">
+                                <h3 class="me">불닭칠리모짜슈퍼박스(소스1개)</h3>
+                                <p class="sub">칠리모짜징거통다리+프렌치차이드M+스프라이트</p>
+                                <p class="price">13,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food15.png" alt="">
+                                <h3 class="me">불닭칠리슈퍼박스(소스1개)</h3>
+                                <p class="sub">칠리징거통다리+프렌치프라이M+스프라이트M+핫크리스피통다리+에그타르트+불닭소스1</p>
+                                <p class="price">11,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food16.png" alt="">
+                                <h3 class="me">커널박스</h3>
+                                <p class="sub">커널버거+프렌치프라이M+콜라M+핫크리스피통다리</p>
+                                <p class="price">8,900</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food17.png" alt="">
+                                <h3 class="me">커널세트</h3>
+                                <p class="sub">커널버거+프렌치프라이M+콜라M</p>
+                                <p class="price">6,700</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food18.png" alt="">
+                                <h3 class="me">커널버거</h3>
+                                <p class="sub">커널버거</p>
+                                <p class="price">4,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food1.png" alt="">
+                                <h3 class="me">커널데리야끼박스</h3>
+                                <p class="sub">커널데리야끼버거+프렌치프라이M+콜라M+핫크리스피통다리</p>
+                                <p class="price">9,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food2.png" alt="">
+                                <h3 class="me">커널데리야끼세트</h3>
+                                <p class="sub">커널데리야끼버거+프렌치프라이M+콜라M</p>
+                                <p class="price">7,000</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food3.png" alt="">
+                                <h3 class="me">커널데리야끼버거</h3>
+                                <p class="sub">커널데리야끼버거</p>
+                                <p class="price">4,500</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food4.png" alt="">
+                                <h3 class="me">닭껍질튀김 1900원</h3>
+                                <p class="sub">닭껍질튀김+살사소스</p>
+                                <p class="price">1,900</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food5.png" alt="">
+                                <h3 class="me">KFC패밀리팩</h3>
+                                <p class="sub">클래식징거통다리+징거2개+핫크리스피통다리4조각+텐더4조각+닭껍질튀김2개+살사소스2개+코울슬로2개+버터비스켓2개+딸기잼2개+콜라M3
+                                </p>
+                                <p class="price">35,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food6.png" alt="">
+                                <h3 class="me">KFC투게더팩</h3>
+                                <p class="sub">징거+징거타워+핫크리스피통다리2조각+롱치즈스틱2개+코울슬로+닭껍질튀김+살사소스+콜라M2개</p>
+                                <p class="price">25,500</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food7.png" alt="">
+                                <h3 class="me">KFC베스트팩</h3>
+                                <p class="sub">클래식징거통다리+트위스터+텐더4+코울슬로+버터비스켓+딸기잼+콜라M</p>
+                                <p class="price">17,900</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food8.png" alt="">
+                                <h3 class="me">갓양념통다리 5조각(구. 갓양념블랙라벨치킨)</h3>
+                                <p class="sub">치킨나이트 1+1 제외</p>
+                                <p class="price">16,700</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food9.png" alt="">
+                                <h3 class="me">갓양념통다리 5조각(구. 갓양념블랙라벨치킨)</h3>
+                                <p class="sub">치킨나이트 1+1 제외</p>
+                                <p class="price">16,700</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food10.png" alt="">
+                                <h3 class="me">핫크리스피통다리5조각(구. 켄터키통다리순살치킨)</h3>
+                                <p class="sub">치킨나이트 1+1 제외</p>
+                                <p class="price">15,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food11.png" alt="">
+                                <h3 class="me">핫크리스피통다리5조각(구. 켄터키통다리순살치킨)</h3>
+                                <p class="sub">치킨나이트 1+1 제외</p>
+                                <p class="price">15,200</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food12.png" alt="">
+                                <h3 class="me">버터 비스켓</h3>
+                                <p class="sub">버터비스켓+딸기잼</p>
+                                <p class="price">2,600</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="menu-box" href="#">
+                                <img src="images/food/food13.png" alt="">
+                                <h3 class="me">코울슬로</h3>
+                                <p class="price">2,100</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <a href="#" class="various">
+                    다양한 메뉴 보러가기
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <div class="app-order">
+            <div class="app-container">
+                <div class="app-banner">
+                    <div class="app-banner-inner">
+                        <img src="images/banner_store_title.png" alt="">
+                    </div>
+                    <a href="#">앱으로 주문하기</a>
+                    <div class="app-banner-img">
+                        <img src="images/banner_store_right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="phandom">
+            <div class="insta-container">
+                <div class="title">
+                    <img src="images/kfc_sprite.png" alt="">
+                    <h2>KFC FACEBOOK, INSTAGRAM</h2>
+                </div>
+                <div class="insta-box">
+                    <ul>
+                        <li>
+                            <div class="insta-shadow">
+                                <a href="#">
+                                    <img class="insta-img" src="images/insta/B27eTkgqF3Fk.jpg" alt="">
+                                    <div class="insta-hover">
+                                        <p class="korea">kfc-korea</p>
+                                        <p class="korea-menu">#KFC #케이에프씨 #KFC치킨 #KFC메뉴 #KFC40주년 #KFC신메뉴 #칠리징거통다리</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                </a>
+                                <div class="insta-bottom-text">
+                                    <p class="kfckorea">
+                                        <img src="images/insta/fandom_instagram.png" alt="">kfc_korea
+                                    </p>
+                                    <a href="#">
+                                        <p class="follower">
+                                            +팔로워
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="insta-shadow">
+                                <a href="#">
+                                    <img class="insta-img" src="images/insta/e0A24Rv28EAb.jpg" alt="">
+                                    <div class="insta-hover">
+                                        <p class="korea">kfc-korea</p>
+                                        <p class="korea-menu">#KFC #케이에프씨 #KFC치킨 #KFC메뉴 #불닭칠리슈퍼박스 #칠리징거통다리 #칠리모짜징거통다리
+                                        </p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                </a>
+                                <div class="insta-bottom-text">
+                                    <p class="kfckorea">
+                                        <img src="images/insta/fandom_instagram.png" alt="">kfc_korea
+                                    </p>
+                                    <a href="#">
+                                        <p class="follower">
+                                            +팔로워
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="insta-shadow">
+                                <a href="#">
+                                    <img class="insta-img" src="images/insta/CyfEob8LWCGd.jpg" alt="">
+                                    <div class="insta-hover">
+                                        <p class="korea">kfc-korea</p>
+                                        <p class="korea-menu">#KFC #케이에프씨 #KFC치킨 #KFC메뉴 #KFC40주년 #KFC신메뉴 #칠리징거통다리</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                </a>
+                                <div class="insta-bottom-text">
+                                    <p class="kfckorea">
+                                        <img src="images/insta/fandom_instagram.png" alt="">kfc_korea
+                                    </p>
+                                    <a href="#">
+                                        <p class="follower">
+                                            +팔로워
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="insta-shadow">
+                                <a href="#">
+                                    <img class="insta-img" src="images/insta/NdT6mTIiudka.jpg" alt="">
+                                    <div class="insta-hover">
+                                        <p class="korea">kfc-korea</p>
+                                        <p class="korea-menu">#매운맛식혀 #스프라이트시켜
+                                            #스프라이트 #스프라이트제로
+                                            #KFC #불닭칠리슈퍼박스 #불닭모짜슈퍼박스</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                </a>
+                                <div class="insta-bottom-text">
+                                    <p class="kfckorea">
+                                        <img src="images/insta/fandom_instagram.png" alt="">kfc_korea
+                                    </p>
+                                    <a href="#">
+                                        <p class="follower">
+                                            +팔로워
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="insta-shadow">
+                                <a href="#">
+                                    <img class="insta-img" src="images/insta/FNxmjpCjGt9q.jpg" alt="">
+                                    <div class="insta-hover">
+                                        <p class="korea">kfc-korea</p>
+                                        <p class="korea-menu">#KFC #케이에프씨 #KFC치킨 #KFC메뉴 #칠리징거통다리 #칠리모짜징거통다리 #할인</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                </a>
+                                <div class="insta-bottom-text">
+                                    <p class="kfckorea">
+                                        <img src="images/insta/fandom_instagram.png" alt="">kfc_korea
+                                    </p>
+                                    <a href="#">
+                                        <p class="follower">
+                                            +팔로워
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="kfc-youtube">
+            <div class="youtube-container">
+                <div class="title">
+                    <img src="images/kfc_sprite.png" alt="">
+                    <h2>KFC YOUTUBE</h2>
+                    <div class="youtube-slide-next"></div>
+                    <div class="youtube-slide-prev"></div>
+                </div>
+                <div class="item">
+                    <div class="swiper youtube-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/egVAK6ot9zk?si=u3AuFREbv9cpBQpX"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/AnGiIKiCKRM?si=PdahmlnmEKbBS6b1"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/tn1gFYIS1MI?si=cv6Evht-Nq5O0vV_"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide"><iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/_ri8mij4qnk?si=78r_Zpa_ff8yjV3Q"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ZcelGbMsd-c?si=ZIuQ-Gm_pEZNPViR"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/wDEI7tSSK_o?si=DYI3nC9COlSf5fLV"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="kfc-footer">
+            <div class="logo-footer">
+                <a class="f-logo" href="#"></a>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-up padd">
+                    <li class="footer-nav-upa"><a href="#">DELIVERY</a></li>
+                    <li class="footer-nav-upt"><a href="#">추천메뉴</a></li>
+                    <li class="footer-nav-upt"><a href="#">치킨&세트</a></li>
+                    <li class="footer-nav-upt"><a href="#">버거&세트</a></li>
+                    <li class="footer-nav-upt"><a href="#">스택&사이드</a></li>
+                    <li class="footer-nav-upt"><a href="#">음료</a></li>
+                </ul>
+                <ul class="footer-nav-up padd">
+                    <li class="footer-nav-upa"><a href="#">STORE</a></li>
+                    <li class="footer-nav-upt"><a href="#">매장찾기</a></li>
+                </ul>
+                <ul class="footer-nav-up padd">
+                    <li class="footer-nav-upa"><a href="#">EVENT</a></li>
+                    <li class="footer-nav-upt"><a href="#">프로모션</a></li>
+                    <li class="footer-nav-upt"><a href="#">새소식</a></li>
+                    <li class="footer-nav-upt"><a href="#">공지사항</a></li>
+                </ul>
+                <ul class="footer-nav-up padd">
+                    <li class="footer-nav-upa"><a href="#">KFC SERVICE</a></li>
+                    <li class="footer-nav-upt"><a href="#">멤버십</a></li>
+                    <li class="footer-nav-upt"><a href="#">카드&상품권</a></li>
+                    <li class="footer-nav-upt"><a href="#">KFC TIP</a></li>
+                    <li class="footer-nav-upt"><a href="#">고객센터</a></li>
+                    <li class="footer-nav-upt"><a href="#">직영 입점 문의</a></li>
+                </ul>
+                <ul class="footer-nav-up">
+                    <li class="footer-nav-upa"><a href="#">KFC IS</a></li>
+                    <li class="footer-nav-upt"><a href="#">브랜드</a></li>
+                    <li class="footer-nav-upt"><a href="#">연혁</a></li>
+                    <li class="footer-nav-upt"><a href="#">IR</a></li>
+                    <li class="footer-nav-upt"><a href="#">NEWS</a></li>
+                </ul>
+                <ul class="footer-nav-up padd">
+                    <li class="footer-nav-upa"><a href="#">인재채용</a></li>
+                    <li class="footer-nav-upt"><a href="#">KFC 인재채용</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="none-gray"></div>
+        <div class="down-nav-two">
+            <div class="down-footer">
+                <ul class="down-footer-one">
+                    <li><a class="yellow" href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사이트 이용약관</a></li>
+                    <li><a href="#">위치정보 이용약관</a></li>
+                    <li><a href="#">KFC 선불카드 이용약관</a></li>
+                    <li><a href="#">영상정보처리기기 운영관리 방침</a></li>
+                </ul>
+            </div>
+            <div class="footer-last">
+                <p class="address">서울 송파구 올림픽로 299, 2F KFC</p>
+                <p class="number">사업자등록번호 : 201-81-89723 / 주식회사 케이에프씨코리아 / 대표자 : 신호상</p>
+                <p class="tel">TEL : 02)6020-8383 월~금 09:00~12:00, 13:00~17:00 공휴일 제외 / FAX : 02)6020-8399</p>
+                <p class="co">&copy; KFC KOREA Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var swiper = new Swiper(".main-slide", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loof: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".button-right",
+                prevEl: ".button-left",
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".food-slide", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".food-slide-next",
+                prevEl: ".food-slide-prev",
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".youtube-slide", {
+            spaceBetween: 15,
+            centeredSlides: true,
+            slidesPerView: 3,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".youtube-slide-next",
+                prevEl: ".youtube-slide-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
